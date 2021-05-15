@@ -1,0 +1,11 @@
+.container--flex {
+  @include centered-flex($justify: space-between);
+}
+
+.page-header {
+  border-bottom: 1px solid $header-line;
+}
+
+.page-header__nav {
+  @include centered-flex();
+}

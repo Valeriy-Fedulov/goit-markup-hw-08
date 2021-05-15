@@ -1,0 +1,50 @@
+.menu-nav {
+  display: flex;
+  @extend %list-ul;
+}
+
+.page-header__menu-nav {
+  margin-left: 93px;
+}
+
+.menu-nav__item:not(:last-child) {
+  position: relative;
+  margin-right: 50px;
+}
+
+.menu-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $title-color;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+
+  &--activ {
+    color: $main-color;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+
+      bottom: 0;
+      left: 0;
+
+      background-color: $main-color;
+      border-radius: 2px;
+    }
+  }
+}

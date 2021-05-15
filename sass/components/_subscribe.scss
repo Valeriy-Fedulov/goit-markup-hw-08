@@ -1,0 +1,57 @@
+.list-box__item--grow {
+  flex-grow: 1;
+}
+
+.subscribe {
+  @include centered-flex($align: flex-end);
+}
+.subscribe__email {
+  display: flex;
+  flex-grow: 1;
+}
+
+.subscribe__label {
+  width: 100%;
+}
+
+.subscribe__title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white-title-color;
+}
+
+.subscribe__input {
+  height: 50px;
+  padding: 15px 16px;
+  width: 100%;
+
+  background-color: transparent;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $mail-tel-color;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: $mail-tel-color;
+  }
+}
+
+.btn__icon {
+  margin-left: 10px;
+}
+
+.btn--right-icon {
+  @include centered-flex();
+  flex-basis: 200px;
+  margin-left: 12px;
+  padding: 10px 28px 10px 29px;
+}

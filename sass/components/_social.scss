@@ -1,0 +1,53 @@
+.soc {
+  display: flex;
+  @extend %list-ul;
+}
+
+.soc--space {
+  justify-content: space-between;
+}
+
+.soc__link {
+  @include centered-flex();
+  height: 44px;
+  width: 44px;
+
+  background-color: transparent;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--bg {
+    background-color: $soc-bg-dark;
+    border-radius: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $main-color;
+
+    .soc__icon {
+      fill: $white-title-color;
+    }
+  }
+}
+
+.soc__icon {
+  fill: $icon-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .soc__link--bg & {
+    fill: $white-title-color;
+  }
+}
+
+.soc--white {
+  display: flex;
+  color: $white-title-color;
+  @extend %list-ul;
+}
+
+.soc__item:not(:last-child) {
+  margin-right: 10px;
+}

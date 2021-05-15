@@ -1,0 +1,28 @@
+.mail-tel {
+  display: inline-block;
+
+  font-style: normal;
+  color: $mail-tel-color;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+}
+
+.address__mail-tel {
+  margin-bottom: 9px;
+}
+
+.adr {
+  font-style: normal;
+  color: $white-title-color;
+}
+
+.page-footer__adr {
+  margin-top: 0;
+  margin-bottom: 9px;
+}

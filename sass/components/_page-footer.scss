@@ -1,0 +1,24 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $bg-dark;
+}
+
+.list-box__item {
+  width: 270px;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.join {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $white-title-color;
+}
+
+.page-footer__join {
+  margin-bottom: 20px;
+}
