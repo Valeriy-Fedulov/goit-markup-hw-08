@@ -25,7 +25,6 @@ h3 {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -47,16 +46,28 @@ h3 {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1600px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .list-box {
@@ -91,20 +102,31 @@ h3 {
 }
 
 .logo, .logo:focus {
-  display: inline-block;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #000;
+}
+@media screen and (max-width: 767px) {
+  .logo, .logo:focus {
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .logo, .logo:focus {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__web {
   color: #2196f3;
 }
 
 .menu-nav {
-  display: flex;
+  display: none;
 }
 
 .page-header__menu-nav {
@@ -146,7 +168,7 @@ h3 {
 }
 
 .menu-connect {
-  display: flex;
+  display: none;
 }
 
 .menu-connect__item:not(:last-child) {
@@ -174,34 +196,47 @@ h3 {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: rgba(47, 48, 58, 0.1);
-  border: 1px solid #000;
   box-sizing: border-box;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 400px;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   text-align: center;
+}
+@media screen and (min-width: 1600px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
 }
+@media screen and (min-width: 1600px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
-.features {
-  width: 270px;
+@media screen and (min-width: 1600px) {
+  .features {
+    width: 270px;
+  }
 }
 
 .features__title {
@@ -210,6 +245,11 @@ h3 {
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
 }
 
 .features__icon {
@@ -224,6 +264,7 @@ h3 {
 }
 
 .section--ptop {
+  display: none;
   padding-top: 0px;
 }
 
@@ -259,9 +300,12 @@ h3 {
 }
 
 .team {
-  flex-basis: calc((100% - 4 * 30px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team__img {
@@ -269,9 +313,14 @@ h3 {
 }
 
 .team__title {
-  padding: 30px 32px;
+  padding: 30px 32px 24px;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 1600px) {
+  .team__title {
+    padding: 30px 32px;
+  }
 }
 
 .team__name {
@@ -296,7 +345,7 @@ h3 {
 }
 
 .soc--space {
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .soc__link {
@@ -342,7 +391,6 @@ h3 {
   justify-content: center;
   align-items: center;
   height: 92px;
-  width: 170px;
   border: 1px solid;
   border-color: #afb1b8;
   box-sizing: border-box;
@@ -355,7 +403,18 @@ h3 {
 .clients:hover .clients__icon, .clients:focus .clients__icon {
   fill: #2196f3;
 }
+@media screen and (min-width: 1600px) {
+  .clients {
+    width: 170px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .client__box {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+}
 .clients__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

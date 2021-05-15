@@ -37,7 +37,7 @@ h3 {
 }
 
 .container {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -61,17 +61,27 @@ h3 {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1600px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: $title-color;
+
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .list-box {

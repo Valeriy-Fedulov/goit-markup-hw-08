@@ -1,7 +1,6 @@
 .clients {
   @include centered-flex();
   height: 92px;
-  width: 170px;
   border: 1px solid;
   border-color: $icon-color;
   box-sizing: border-box;
@@ -16,6 +15,17 @@
     .clients__icon {
       fill: $main-color;
     }
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client__box {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
   }
 }
 

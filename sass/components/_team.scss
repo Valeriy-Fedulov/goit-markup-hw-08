@@ -3,10 +3,14 @@
 }
 
 .team {
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  // flex-basis: calc((100% - 4 * 30px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team__img {
@@ -14,9 +18,13 @@
 }
 
 .team__title {
-  padding: 30px 32px;
+  padding: 30px 32px 24px;
   background-color: $white-title-color;
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 1600px) {
+    padding: 30px 32px;
+  }
 }
 
 .team__name {

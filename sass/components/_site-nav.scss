@@ -1,5 +1,6 @@
 .menu-nav {
-  display: flex;
+  display: none;
+  //  @ display: flex;
   @extend %list-ul;
 }
 

@@ -1,5 +1,6 @@
 .menu-connect {
-  display: flex;
+  display: none;
+  // display: flex;
   @extend %list-ul;
 }
 

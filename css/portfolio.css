@@ -25,7 +25,6 @@ h3 {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -47,16 +46,28 @@ h3 {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1600px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .list-box {
@@ -91,20 +102,31 @@ h3 {
 }
 
 .logo, .logo:focus {
-  display: inline-block;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #000;
+}
+@media screen and (max-width: 767px) {
+  .logo, .logo:focus {
+    padding: 10px 15px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .logo, .logo:focus {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__web {
   color: #2196f3;
 }
 
 .menu-nav {
-  display: flex;
+  display: none;
 }
 
 .page-header__menu-nav {
@@ -146,7 +168,7 @@ h3 {
 }
 
 .menu-connect {
-  display: flex;
+  display: none;
 }
 
 .menu-connect__item:not(:last-child) {
@@ -178,7 +200,7 @@ h3 {
 }
 
 .soc--space {
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .soc__link {

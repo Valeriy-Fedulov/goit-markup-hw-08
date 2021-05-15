@@ -1,5 +1,7 @@
 .features {
-  width: 270px;
+  @media screen and (min-width: 1600px) {
+    width: 270px;
+  }
 }
 
 .features__title {
@@ -9,6 +11,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $title-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__icon {
