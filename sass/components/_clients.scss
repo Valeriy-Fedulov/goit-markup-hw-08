@@ -1,4 +1,10 @@
-.clients {
+.list-box--flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__link {
   @include centered-flex();
   height: 92px;
   border: 1px solid;
@@ -22,11 +28,9 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .client__box {
-    flex-basis: calc((100% - 30px) / 2);
-    margin-bottom: 30px;
-  }
+.clients {
+  margin: 15px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
 }
 
 .clients__icon {

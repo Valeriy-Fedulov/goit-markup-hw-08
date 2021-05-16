@@ -79,6 +79,8 @@ h3 {
 }
 
 .page-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -322,7 +324,7 @@ h3 {
 }
 
 @media screen and (max-width: 1599px) {
-  .list-box__item {
+  .list-box__item:not(:last-child) {
     margin-bottom: 60px;
   }
 }
@@ -346,7 +348,7 @@ h3 {
   color: #fff;
 }
 .mail-tel {
-  display: inline-block;
+  display: block;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -366,14 +368,8 @@ h3 {
 }
 
 .adr {
-  margin-bottom: 60px;
   font-style: normal;
   color: #fff;
-}
-@media screen and (min-width: 1600px) {
-  .adr {
-    margin-bottom: 0;
-  }
 }
 
 .adr__title {
@@ -384,6 +380,10 @@ h3 {
   .adr__title {
     margin-bottom: 9px;
   }
+}
+
+.subscribe {
+  text-align: center;
 }
 
 .subscribe__label {
@@ -437,7 +437,13 @@ h3 {
 }
 
 .btn--right-icon {
-  flex-basis: 200px;
-  margin-left: 12px;
-  padding: 10px 28px 10px 29px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 28px;
+}
+@media screen and (min-width: 1600px) {
+  .btn--right-icon {
+    margin-left: 12px;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

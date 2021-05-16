@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.list-box__item {
+.list-box__item:not(:last-child) {
   @media screen and (max-width: 1599px) {
     margin-bottom: 60px;
   }

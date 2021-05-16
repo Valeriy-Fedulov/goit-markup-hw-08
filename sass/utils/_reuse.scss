@@ -86,7 +86,7 @@ h3 {
 
 .list-box {
   // @include centered-flex($justify: space-between);
-  // flex-wrap: wrap;
+  //flex-wrap: wrap;
   @extend %list-ul;
 }
 

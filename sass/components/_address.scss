@@ -1,5 +1,5 @@
 .mail-tel {
-  display: inline-block;
+  display: block;
 
   font-style: normal;
   color: $mail-tel-color;
@@ -15,19 +15,15 @@
 
 .address__mail-tel {
   margin-bottom: 8px;
+
   @media screen and (min-width: 1600px) {
     margin-bottom: 9px;
   }
 }
 
 .adr {
-  margin-bottom: 60px;
   font-style: normal;
   color: $white-title-color;
-
-  @media screen and (min-width: 1600px) {
-    margin-bottom: 0;
-  }
 }
 
 .adr__title {
