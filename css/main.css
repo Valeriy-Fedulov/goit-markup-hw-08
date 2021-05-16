@@ -30,6 +30,11 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .btn {
   padding: 10px 32px;
@@ -49,7 +54,7 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -63,7 +68,7 @@ h3 {
   text-align: center;
   color: #212121;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -173,9 +178,19 @@ h3 {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .menu-connect {
+    display: flex;
+  }
+}
 
 .menu-connect__item:not(:last-child) {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .menu-connect__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .menu-connect__link {

@@ -10,6 +10,10 @@
   @include centered-flex($justify: flex-start);
   flex-wrap: wrap;
   @extend %list-ul;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .portf-nav__item {

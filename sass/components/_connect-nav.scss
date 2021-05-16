@@ -1,14 +1,21 @@
 .menu-connect {
+  @extend %list-ul;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
-  // display: flex;
-  @extend %list-ul;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .menu-connect__item:not(:last-child) {
-  // margin-right: 50px;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .menu-connect__link {
