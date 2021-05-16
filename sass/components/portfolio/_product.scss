@@ -6,7 +6,8 @@
 }
 
 .services__item {
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  // flex-basis: calc((100% -  * 30px) / 3);
+  flex-basis: 100%;
   margin: 15px;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -22,6 +23,7 @@
 }
 
 .product__portf {
+  margin: 0;
   font-size: 16px;
   line-height: 1.87;
   color: $main-text-color;
@@ -29,6 +31,7 @@
 
 .product__img {
   display: block;
+  width: 100%;
 }
 
 .product {
@@ -63,7 +66,7 @@
     rgba(33, 150, 243, 0.9)
   );
 
-  @include centered-flex();
+  // @include centered-flex();
   padding: 24px;
 
   font-size: 18px;

@@ -1,6 +1,8 @@
 .menu-nav {
-  display: none;
-  //  @ display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  display: flex;
   @extend %list-ul;
 }
 

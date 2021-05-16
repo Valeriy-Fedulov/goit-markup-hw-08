@@ -1,6 +1,13 @@
+.list-box--align {
+  align-items: flex-start;
+}
+
 .features {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  margin: 15px;
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
   }
 
   @media screen and (min-width: 1600px) {
@@ -9,7 +16,6 @@
 }
 
 .features__icon {
-  // @include centered-flex();
   margin-bottom: 30px;
   background-color: $features-background;
   border-radius: 4px;

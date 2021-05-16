@@ -1,15 +1,18 @@
 .menu-connect {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   // display: flex;
   @extend %list-ul;
 }
 
 .menu-connect__item:not(:last-child) {
-  margin-right: 50px;
+  // margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .menu-connect__link {
-  // @include centered-flex();
+  @include centered-flex($justify: flex-start);
 
   font-weight: 500;
   line-height: 1.14;
