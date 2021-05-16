@@ -7,6 +7,9 @@
 }
 
 .list-box__item {
+  @media screen and (max-width: 1599px) {
+    margin-bottom: 60px;
+  }
   // width: 270px;
 }
 

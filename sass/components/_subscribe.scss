@@ -43,6 +43,10 @@
     line-height: 1.25;
     color: $mail-tel-color;
   }
+
+  @media screen and (max-width: 1599px) {
+    margin-bottom: 20px;
+  }
 }
 
 .btn__icon {
@@ -50,7 +54,7 @@
 }
 
 .btn--right-icon {
-  @include centered-flex();
+  // @include centered-flex();
   flex-basis: 200px;
   margin-left: 12px;
   padding: 10px 28px 10px 29px;
