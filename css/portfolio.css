@@ -70,13 +70,6 @@ h3 {
   }
 }
 
-.list-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -85,20 +78,8 @@ h3 {
   margin: -1px;
 }
 
-.container--flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .page-header {
   border-bottom: 1px solid #ececec;
-}
-
-.page-header__nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .logo, .logo:focus {
@@ -176,9 +157,6 @@ h3 {
 }
 
 .menu-connect__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -234,6 +212,7 @@ h3 {
 
 .soc--white {
   display: flex;
+  justify-content: center;
   color: #fff;
 }
 
@@ -343,10 +322,7 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.list-box__item {
-  width: 270px;
+  text-align: center;
 }
 
 .footer__item:not(:last-child) {
@@ -390,21 +366,6 @@ h3 {
 .page-footer__adr {
   margin-top: 0;
   margin-bottom: 9px;
-}
-
-.list-box__item--grow {
-  flex-grow: 1;
-}
-
-.subscribe {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.subscribe__email {
-  display: flex;
-  flex-grow: 1;
 }
 
 .subscribe__label {

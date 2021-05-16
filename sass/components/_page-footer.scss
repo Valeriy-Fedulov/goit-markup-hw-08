@@ -3,10 +3,11 @@
   padding-bottom: 60px;
 
   background-color: $bg-dark;
+  text-align: center;
 }
 
 .list-box__item {
-  width: 270px;
+  // width: 270px;
 }
 
 .footer__item:not(:last-child) {

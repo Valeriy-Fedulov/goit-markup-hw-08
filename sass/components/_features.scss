@@ -18,10 +18,11 @@
 }
 
 .features__icon {
-  @include centered-flex();
+  // @include centered-flex();
   margin-bottom: 30px;
   background-color: $features-background;
   border-radius: 4px;
   padding-top: 25px;
   padding-bottom: 25px;
+  text-align: center;
 }
