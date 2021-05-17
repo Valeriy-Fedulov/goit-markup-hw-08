@@ -14,11 +14,7 @@
 }
 
 .address__mail-tel {
-  margin-bottom: 8px;
-
-  @media screen and (min-width: 1600px) {
-    margin-bottom: 9px;
-  }
+  margin-bottom: 9px;
 }
 
 .adr {
@@ -28,9 +24,5 @@
 
 .adr__title {
   margin-top: 0;
-  margin-bottom: 8px;
-
-  @media screen and (min-width: 1600px) {
-    margin-bottom: 9px;
-  }
+  margin-bottom: 9px;
 }

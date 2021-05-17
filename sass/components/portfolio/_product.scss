@@ -1,15 +1,12 @@
 .services {
+  @extend %list-ul;
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
-  @extend %list-ul;
   margin: -15px;
 }
 
 .services__item {
-  display: flex;
-  align-items: stretch;
-  width: 100%;
   margin: 15px;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,14 +37,9 @@
   width: 100%;
 }
 
-.product__shadow {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-
 .product {
   display: flex;
+  width: 100%;
   align-items: stretch;
   text-decoration: none;
 
@@ -63,7 +55,12 @@
   }
 }
 
+.product__shadow {
+  background-color: tomato;
+}
+
 .product__overley {
+  display: block;
   position: relative;
   overflow: hidden;
 }

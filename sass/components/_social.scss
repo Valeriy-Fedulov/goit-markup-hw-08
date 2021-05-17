@@ -19,7 +19,6 @@
 
   &--bg {
     background-color: $soc-bg-dark;
-    border-radius: 50%;
   }
 
   &:hover,
@@ -43,10 +42,13 @@
 }
 
 .soc--white {
-  display: flex;
   justify-content: center;
   color: $white-title-color;
   @extend %list-ul;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .soc__item:not(:last-child) {

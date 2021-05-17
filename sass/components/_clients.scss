@@ -1,7 +1,14 @@
-.list-box--flex {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+.clients {
+  margin: 15px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+  }
 }
 
 .clients__link {
@@ -21,19 +28,6 @@
     .clients__icon {
       fill: $main-color;
     }
-  }
-
-  @media screen and (min-width: 1600px) {
-    width: 170px;
-  }
-}
-
-.clients {
-  margin: 15px;
-  flex-basis: calc((100% - 2 * 30px) / 2);
-
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }
 
