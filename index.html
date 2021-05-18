@@ -38,6 +38,18 @@
               <a class="menu-nav__link" href="">Контакты</a>
             </li>
           </ul>
+
+          <!-- Мобильное меню -->
+          <button class="btn-mob" type="button" data-menu-button>
+            <svg class="mob-nav" width="40" height="40">
+              <use href="./images/icons.svg#menu-mob"></use>
+            </svg>
+          </button>
+          <button class="btn-mob" type="button" data-menu-button>
+            <svg class="mob-nav" width="40" height="40">
+              <use href="./images/icons.svg#close-mob"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="menu-connect">
           <li class="menu-connect__item">
@@ -536,7 +548,16 @@
         </form>
       </div>
     </div>
+    <!-- Мобильное меню -->
+    <div class="modal">
+      <button class="btn-close" type="button" data-modal-close>
+        <svg class="btn-close__icon" width="40" height="40">
+          <use href="./images/icons.svg#close-mob"></use>
+        </svg>
+      </button>
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobmenu.js"></script>
   </body>
 </html>

@@ -1,10 +1,14 @@
 .section--ptop {
-  display: none;
   padding-top: 0px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .work {
   position: relative;
+  margin: 15px;
 }
 
 .work__img {
@@ -24,7 +28,7 @@
     rgba(47, 48, 58, 0.8)
   );
 
-  // @include centered-flex();
+  @include centered-flex();
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
