@@ -1,11 +1,14 @@
 .menu-connect {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
   @extend %list-ul;
 
   @media screen and (max-width: 767px) {
-    display: none;
+    flex-direction: column;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 767px) {
     display: flex;
   }
 }

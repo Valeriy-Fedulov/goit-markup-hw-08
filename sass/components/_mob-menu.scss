@@ -1,0 +1,19 @@
+.btn-mob {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+
+  & .btn-mob__icon-close {
+    display: none;
+  }
+
+  &.is-open .btn-mob__icon-menu {
+    display: none;
+  }
+
+  &.is-open .btn-mob__icon-close {
+    display: block;
+  }
+}
