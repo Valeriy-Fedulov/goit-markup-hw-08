@@ -1,17 +1,27 @@
 .menu-nav {
   display: none;
+  flex-grow: 1;
+  z-index: 999;
   @extend %list-ul;
+
+  @media screen and (max-width: 479px) {
+    width: 100vw;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
+  }
 
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100vw;
+    left: 50%;
+    transform: translate(-50%);
     height: 100vh;
 
     padding: 48px 40px;
 
-    background-color: ivory;
+    background-color: $white-title-color;
 
     &.is-open {
       display: flex;
@@ -70,6 +80,10 @@
 
 .menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -91,6 +105,6 @@
   }
 }
 
-.m-con {
+.menu-grow {
   flex-grow: 1;
 }

@@ -1,0 +1,26 @@
+.mob-social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  @extend %list-ul;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-social__item:not(:last-child) {
+  content: '';
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid $modal-inp;
+}
+
+.mob-social__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $main-color;
+}

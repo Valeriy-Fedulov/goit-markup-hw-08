@@ -23,7 +23,8 @@
           <a class="logo" href="./index.html"
             ><span class="logo__web">Web</span>Studio</a
           >
-          <ul class="menu-nav page-header__menu-nav">
+
+          <ul class="menu-nav page-header__menu-nav" data-menu>
             <li class="menu-nav__item">
               <a class="menu-nav__link" href="./index.html">Студия </a>
             </li>
@@ -37,26 +38,73 @@
             <li class="menu-nav__item">
               <a class="menu-nav__link" href="">Контакты</a>
             </li>
+            <li class="menu-grow">
+              <ul class="menu-connect">
+                <li class="menu-connect__item">
+                  <a
+                    class="menu-connect__link menu-connect__link--big-tel"
+                    href="tel:+380961111111"
+                  >
+                    <svg class="menu-connect__icon" width="16" height="16">
+                      <use href="./images/icons.svg#tel"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="menu-connect__item">
+                  <a
+                    class="menu-connect__link menu-connect__link--big-mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="menu-connect__icon" width="16" height="16">
+                      <use href="./images/icons.svg#mail"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="mob-social">
+                <li class="mob-social__item">
+                  <a class="mob-social__link" href="">Instagram</a>
+                </li>
+                <li class="mob-social__item">
+                  <a class="mob-social__link" href="">Twitter</a>
+                </li>
+                <li class="mob-social__item">
+                  <a class="mob-social__link" href="">Facebook</a>
+                </li>
+                <li class="mob-social__item">
+                  <a class="mob-social__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </li>
           </ul>
+
+          <!-- Мобильное меню -->
+          <button
+            class="btn-mob"
+            type="button"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="btn-mob__icon-menu"
+                href="./images/icons.svg#menu-mob"
+              ></use>
+              <use
+                class="btn-mob__icon-close"
+                href="./images/icons.svg#close-mob"
+              ></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="menu-connect">
-          <li class="menu-connect__item">
-            <a class="menu-connect__link" href="mailto:info@devstudio.com">
-              <svg class="menu-connect__icon" width="16" height="16">
-                <use href="./images/icons.svg#mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="menu-connect__item">
-            <a class="menu-connect__link" href="tel:+380961111111">
-              <svg class="menu-connect__icon" width="16" height="16">
-                <use href="./images/icons.svg#tel"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -403,5 +451,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
