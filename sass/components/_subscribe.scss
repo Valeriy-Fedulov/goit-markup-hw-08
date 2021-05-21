@@ -1,21 +1,7 @@
-.list-box__item--grow {
-  // display: flex;
-  // max-width: 450px;
-}
-
 @media screen and (min-width: 1200px) {
   .subscribe {
     @include centered-flex($align: flex-end);
   }
-}
-
-.subscribe__email {
-  // display: flex;
-  // flex-grow: 1;
-}
-
-.subscribe__label {
-  // width: 100%;
 }
 
 .subscribe__title {

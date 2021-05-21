@@ -671,8 +671,8 @@ h3 {
 }
 
 .product:hover .product__title, .product:focus .product__title {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-105%);
+          transform: translateY(-105%);
 }
 
 .product__shadow {
