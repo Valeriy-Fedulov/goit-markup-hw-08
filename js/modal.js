@@ -9,6 +9,7 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
+    document.body.classList.toggle('page-fixed')
     refs.modal.classList.toggle('is-hidden');
   }
 })();

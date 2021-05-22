@@ -181,7 +181,6 @@ h3 {
 
 .btn-mob.is-open .btn-mob__icon-close {
   display: block;
-  position: fixed;
 }
 
 .btn-mob__icon-menu {
@@ -191,10 +190,13 @@ h3 {
 }
 
 .btn-mob__icon-close {
-  position: fixed;
   fill: #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-fixed {
+  overflow: hidden;
 }
 
 .mob-social {
@@ -271,6 +273,7 @@ h3 {
 @media screen and (max-width: 767px) {
   .menu-nav {
     position: fixed;
+    overflow: hidden;
     top: 0;
     left: 50%;
     -webkit-transform: translate(-50%);
@@ -560,7 +563,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .menu-portf {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 
