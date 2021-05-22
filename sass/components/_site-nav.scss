@@ -1,7 +1,6 @@
 .menu-nav {
   display: none;
   flex-grow: 1;
-  z-index: 999;
   @extend %list-ul;
 
   @media screen and (max-width: 479px) {
